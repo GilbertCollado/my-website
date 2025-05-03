@@ -1,50 +1,42 @@
-/* Type selector */
-body {
-  font-family: Arial, sans-serif;    /* Font styling #1 */
-  font-size: 1rem;                   /* Relative unit */
-  background-color: #f5f5f5;
-  margin: 2em;
-}
+/* 1 */ body {
+/* 2 */   font-family: Arial, sans-serif;
+/* 3 */   font-size: 1rem;
+/* 4 */   background-color: #f5f5f5;
+/* 5 */   margin: 2em;
+/* 6 */ }
 
-/* ID selector */
-#highlighted-title {
-  color: rgb(220, 20, 60);           /* Sets text color */
-  font-style: italic;                /* Font styling #2 */
-}
+/* 7 */ #highlighted-title {
+/* 8 */   color: rgb(220, 20, 60);
+/* 9 */   font-style: italic;
+/*10 */ }
 
-/* Class selector */
-.recipe-section {
-  padding: 1.5em;
-  background-color: #ffffff;
-  border-left: 4px solid #ff6600;
-  margin-bottom: 2em;
-}
+/*11 */ .recipe-section {
+/*12 */   padding: 1.5em;
+/*13 */   background-color: #ffffff;
+/*14 */   border-left: 4px solid #ff6600;
+/*15 */   margin-bottom: 2em;
+/*16 */ }
 
-/* Relational selector (descendant) */
-main ul li {
-  margin-bottom: 0.5em;
-  color: #333333;
-}
+/*17 */ main ul li {
+/*18 */   margin-bottom: 0.5em;
+/*19 */   color: #333333;
+/*20 */ }
 
-/* Combination selector */
-h2.recipe-section-title {
-  color: #006400;
-  margin-top: 1em;
-}
+/*21 */ h2.recipe-section-title {
+/*22 */   color: #006400;
+/*23 */   margin-top: 1em;
+/*24 */ }
 
-/* Attribute selector */
-a[target="_blank"] {
-  text-decoration: underline;
-  color: #1a0dab;
-}
+/*25 */ a[target="_blank"] {
+/*26 */   text-decoration: underline;
+/*27 */   color: #1a0dab;
+/*28 */ }
 
-/* Pseudo-class */
-a:hover {
-  color: #ff4500;
-}
+/*29 */ a:hover {
+/*30 */   color: #ff4500;
+/*31 */ }
 
-/* Pseudo-element */
-p::first-line {
-  font-weight: bold;
-  color: #333366;
-}
+/*32 */ p::first-line {
+/*33 */   font-weight: bold;
+/*34 */   color: #333366;
+/*35 */ }
