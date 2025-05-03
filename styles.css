@@ -1,0 +1,50 @@
+/* Type selector */
+body {
+  font-family: Arial, sans-serif;    /* Font styling #1 */
+  font-size: 1rem;                   /* Relative unit */
+  background-color: #f5f5f5;
+  margin: 2em;
+}
+
+/* ID selector */
+#highlighted-title {
+  color: rgb(220, 20, 60);           /* Sets text color */
+  font-style: italic;                /* Font styling #2 */
+}
+
+/* Class selector */
+.recipe-section {
+  padding: 1.5em;
+  background-color: #ffffff;
+  border-left: 4px solid #ff6600;
+  margin-bottom: 2em;
+}
+
+/* Relational selector (descendant) */
+main ul li {
+  margin-bottom: 0.5em;
+  color: #333333;
+}
+
+/* Combination selector */
+h2.recipe-section-title {
+  color: #006400;
+  margin-top: 1em;
+}
+
+/* Attribute selector */
+a[target="_blank"] {
+  text-decoration: underline;
+  color: #1a0dab;
+}
+
+/* Pseudo-class */
+a:hover {
+  color: #ff4500;
+}
+
+/* Pseudo-element */
+p::first-line {
+  font-weight: bold;
+  color: #333366;
+}
