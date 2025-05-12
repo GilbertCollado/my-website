@@ -2,8 +2,21 @@
 body {
   font-family: 'Trebuchet MS', sans-serif; /* Font styling #1 */
   font-size: 1.1rem;                       /* Relative unit */
-  background-color: #fff8f0;               /* Soft background */
+  background: linear-gradient(to bottom, #fff8f0, #e0f7fa); /* Gradient background */
   margin: 2em;
+}
+
+/* Add padding/margin to structure layout */
+header, main, section, footer {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Border added to the main content area */
+main {
+  border: 3px solid #0077b6;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.95); /* Keeps content readable */
 }
 
 /* ID selector */
