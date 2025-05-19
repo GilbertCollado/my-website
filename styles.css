@@ -1,67 +1,78 @@
-/* Type selector */
+/* General page styles */
 body {
-  font-family: 'Trebuchet MS', sans-serif; /* Font styling #1 */
-  font-size: 1.1rem;                       /* Relative unit */
-  background: linear-gradient(to bottom, #fff8f0, #e0f7fa); /* Gradient background */
-  margin: 2em;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.1rem;
+  margin: 2vw;
+  background: linear-gradient(to bottom, #fff8f0, #e0f7fa);
 }
 
-/* Add padding/margin to structure layout */
+/* Consistent nav menu for all pages */
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1em;
+  padding: 1em;
+  background-color: #0077b6;
+  justify-content: center;
+}
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+.nav-menu a:hover {
+  text-decoration: underline;
+  color: #ffd166;
+}
+
+/* Content structure */
 header, main, section, footer {
   padding: 20px;
   margin-bottom: 20px;
 }
-
-/* Border added to the main content area */
 main {
   border: 3px solid #0077b6;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.95); /* Keeps content readable */
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
-/* ID selector */
-#highlighted-title {
-  color: #c1121f;                          /* Bold red */
-  font-style: italic;                      /* Font styling #2 */
+/* Scalable image */
+img {
+  max-width: 100%;
+  height: auto; /* Keeps image scalable */
 }
 
-/* Class selector */
-.recipe-section {
-  padding: 1.5em;
-  background-color: #fefefe;
-  border-left: 6px solid #0077b6;          /* Blue accent */
-  margin-bottom: 2em;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+/* Media Queries for responsiveness */
+/* Adjust nav layout on tablets */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-/* Relational selector (descendant selector) */
+/* Adjust font size for small phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+/* Other styles preserved */
 main ul li {
   margin-bottom: 0.5em;
-  color: #333333;
+  color: #333;
   font-weight: bold;
 }
-
-/* Combination selector (type + class) */
-h2.recipe-section-title {
-  color: #007f5f;                          /* Greenish tone */
-  text-transform: uppercase;
-  margin-top: 1em;
-}
-
-/* Attribute selector */
 a[target="_blank"] {
   text-decoration: underline;
   color: #1a0dab;
 }
-
-/* Pseudo-class */
 a:hover {
   color: #f77f00;
   font-weight: bold;
 }
-
-/* Pseudo-element */
 p::first-line {
   font-weight: bold;
-  color: #6a0572;                          /* Deep purple */
+  color: #6a0572;
 }
