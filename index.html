@@ -1,76 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Dominican Republic's Cuisine is one of the best in the Caribbean, similar to Puerto Rican dishes with shared ingredients.">
-        <title>Dominican Cuisine</title>
-        <!-- Link to external CSS file -->
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <!-- Header with title and author information -->
-        <header>
-            <h1>Dominican Cuisine</h1>
-            <h2>Written by Gilbert Collado</h2>
-            <h3>Certified Platano Connoisseur</h3>
-        </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dominican Republic's Cuisine is one of the best in the Caribbean.">
+  <title>Dominican Cuisine</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Site-wide navigation menu -->
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="segunda-pagina.html">More Dishes</a></li>
+      <li><a href="tercera-pagina.html">Under Construction</a></li>
+      <li><a href="#breakfast">Go to Breakfast</a></li>
+      <li><a href="https://www.dominicancooking.com/" target="_blank">External Recipes</a></li>
+    </ul>
+  </nav>
 
-        <main>
-            <!-- Introduction paragraph -->
-            <p>Top ten <em>Dominican</em> dishes and their recipes. This website will
-                teach you about the best dishes in the <strong>Dominican Republic</strong>, what 
-                ingredients they use, how to acquire them, prepare them, and cook them step-by-step.</p>
+  <header>
+    <h1>Dominican Cuisine</h1>
+    <h2>Written by Gilbert Collado</h2>
+    <h3>Certified Platano Connoisseur</h3>
+  </header>
 
-            <p><q>These are my favorite dishes</q> - Gilbert Collado</p>
+  <main>
+    <p>Top ten <em>Dominican</em> dishes and their recipes. This website will teach you about the best dishes in the <strong>Dominican Republic</strong>.</p>
 
-            <!-- List of dishes (required <ul> and <li>) -->
-            <section>
-                <h2>Top Dishes</h2>
-                <ul>
-                    <li>Tres Golpes (Breakfast)</li>
-                    <li>La Bandera (Lunch)</li>
-                    <li>Mofongo</li>
-                    <li>Pollo Guisado</li>
-                    <li>Chicharrón de Pollo</li>
-                    <li>Sancocho</li>
-                    <li>Habichuelas con Dulce</li>
-                    <li>Pastelón</li>
-                    <li>Yaniqueque</li>
-                    <li>Arepitas de Yuca</li>
-                </ul>
-            </section>
+    <section>
+      <h2>Top Dishes</h2>
+      <ul>
+        <li>Tres Golpes (Breakfast)</li>
+        <li>La Bandera (Lunch)</li>
+        <li>Mofongo</li>
+        <li>Pollo Guisado</li>
+      </ul>
+    </section>
 
-            <!-- Sections for specific meals -->
-            <section>
-                <h2>Breakfast</h2>
-                <p>Tres Golpes: A delicious combination of mashed plantains, fried cheese, salami, and eggs.</p>
-                <!-- Example image (required <img>) -->
-                <img src="https://raw.githubusercontent.com/GilbertCollado/my-website/refs/heads/main/Tres%20Golspes.avif" alt="Mangú with Tres Golpes" width="400">
-            </section>
+    <!-- Anchor destination for internal link -->
+    <section id="breakfast">
+      <h2>Breakfast</h2>
+      <p>Tres Golpes: A combo of mashed plantains, fried cheese, salami, and eggs.</p>
+      <img src="https://raw.githubusercontent.com/GilbertCollado/my-website/refs/heads/main/Tres%20Golspes.avif" alt="Mangú with Tres Golpes" />
+    </section>
 
-            <section>
-                <h2>Lunch</h2>
-                <p>La Bandera: Rice, red beans, and stewed meat — the traditional Dominican lunch.</p>
-            </section>
+    <section>
+      <h2>Lunch</h2>
+      <p>La Bandera: Rice, red beans, and stewed meat.</p>
+    </section>
+  </main>
 
-            <!-- Link to an external Dominican recipe page (required <a>) -->
-            <section>
-                <p>Learn more about Dominican recipes at 
-                    <a href="https://www.dominicancooking.com/" target="_blank">Dominican Cooking</a>.
-                </p>
-            </section>
-
-            <!-- Link to second page -->
-            <section>
-                <p><a href="segunda-pagina.html">Check out more Dominican dishes here!</a></p>
-            </section>
-        </main>
-
-        <!-- Footer with copyright character entity -->
-        <footer>
-            <p>&copy; Gilbert Collado 2025</p>
-            <!-- Force rebuild -->
-        </footer>
-    </body>
+  <footer>
+    <p>&copy; Gilbert Collado 2025</p>
+  </footer>
+</body>
 </html>
