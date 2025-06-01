@@ -25,7 +25,7 @@ body {
   color: #ffd166;
 }
 
-/* Content structure */
+/* Layout and structure */
 header, main, section, footer {
   padding: 20px;
   margin-bottom: 20px;
@@ -34,12 +34,6 @@ main {
   border: 3px solid #0077b6;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.95);
-}
-
-/* Scalable images */
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 /* Dish-specific images */
@@ -52,14 +46,14 @@ img {
   border-radius: 10px;
 }
 
-/* Purple text for dish descriptions */
+/* Description styling */
 .dish-description {
   color: #6a0572;
   font-weight: bold;
   margin-top: 0.5em;
 }
 
-/* Styled list and links */
+/* List and links */
 main ul li {
   margin-bottom: 0.5em;
   color: #333;
@@ -78,7 +72,7 @@ p::first-line {
   color: #6a0572;
 }
 
-/* Responsive layout */
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
