@@ -36,12 +36,6 @@ main {
   background-color: rgba(255, 255, 255, 0.95);
 }
 
-/* Scalable image */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 /* List and text styles */
 main ul li {
   margin-bottom: 0.5em;
@@ -61,7 +55,7 @@ p::first-line {
   color: #6a0572;
 }
 
-/* Grid component for image and caption */
+/* Image grid + caption */
 .image-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -82,7 +76,7 @@ p::first-line {
   color: #444;
 }
 
-/* Flex container for credit (to meet requirement) */
+/* Flex container for credit section */
 .flex-credit {
   display: flex;
   flex-wrap: wrap;
@@ -93,7 +87,7 @@ p::first-line {
   flex: 1 1 45%;
 }
 
-/* Responsive media queries */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
