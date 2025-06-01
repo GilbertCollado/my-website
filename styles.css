@@ -30,35 +30,10 @@ header, main, section, footer {
   padding: 20px;
   margin-bottom: 20px;
 }
-main.grid-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+main {
   border: 3px solid #0077b6;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.95);
-}
-
-/* Flex container added to index.html */
-.flex-sections {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-}
-.flex-sections section {
-  flex: 1 1 45%;
-}
-
-/* Flex layout used on all sub-pages */
-.flex-layout {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-}
-.flex-layout section {
-  flex: 1 1 45%;
 }
 
 /* Scalable image */
@@ -86,24 +61,39 @@ p::first-line {
   color: #6a0572;
 }
 
-/* Media Queries for responsiveness */
-@media (max-width: 1024px) {
-  .grid-layout {
-    grid-template-columns: 1fr;
-  }
+/* Additional Flex Container */
+.flex-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.flex-group section {
+  flex: 1 1 45%;
 }
 
+/* Grid used inside a section (to meet grid requirement) */
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1em;
+}
+.image-grid img {
+  max-width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Media Queries for responsiveness */
 @media (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
     align-items: center;
   }
-  .flex-layout,
-  .flex-sections {
+  .flex-group {
     flex-direction: column;
   }
 }
-
 @media (max-width: 480px) {
   body {
     font-size: 1rem;
