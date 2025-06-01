@@ -42,22 +42,6 @@ img {
   height: auto; /* Keeps image scalable */
 }
 
-/* Media Queries for responsiveness */
-/* Adjust nav layout on tablets */
-@media (max-width: 768px) {
-  .nav-menu {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-/* Adjust font size for small phones */
-@media (max-width: 480px) {
-  body {
-    font-size: 1rem;
-  }
-}
-
 /* Other styles */
 main ul li {
   margin-bottom: 0.5em;
@@ -75,4 +59,20 @@ a:hover {
 p::first-line {
   font-weight: bold;
   color: #6a0572;
+}
+
+/* Media Queries for responsiveness */
+/* Adjust nav layout on tablets */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Adjust font size for small phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 1rem;
+  }
 }
