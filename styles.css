@@ -6,7 +6,7 @@ body {
   background: linear-gradient(to bottom, #fff8f0, #e0f7fa);
 }
 
-/* Consistent nav menu for all pages */
+/* Navigation menu */
 .nav-menu {
   display: flex;
   flex-wrap: wrap;
@@ -36,13 +36,46 @@ main {
   background-color: rgba(255, 255, 255, 0.95);
 }
 
-/* Scalable image */
+/* Flex container for content layout */
+.flex-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.flex-group section {
+  flex: 1 1 45%;
+}
+
+/* Grid component for image and caption */
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1em;
+  text-align: center;
+  padding: 1em;
+}
+.image-grid img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+.image-grid figcaption {
+  font-size: 0.9rem;
+  margin-top: 0.5em;
+  color: #444;
+}
+
+/* Scalable image (global) */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Other styles */
+/* List and text styles */
 main ul li {
   margin-bottom: 0.5em;
   color: #333;
@@ -61,30 +94,7 @@ p::first-line {
   color: #6a0572;
 }
 
-/* Additional Flex Container */
-.flex-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-}
-.flex-group section {
-  flex: 1 1 45%;
-}
-
-/* Grid used inside a section (to meet grid requirement) */
-.image-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-top: 1em;
-}
-.image-grid img {
-  max-width: 100%;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-}
-
-/* Media Queries for responsiveness */
+/* Responsive media queries */
 @media (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
