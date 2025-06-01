@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dominican Republic's Cuisine is one of the best in the Caribbean.">
+  <meta name="description" content="Dominican Republic's Cuisine is one of the best in the Caribbean." />
   <title>Dominican Cuisine</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -25,25 +25,28 @@
     <h3>Certified Platano Connoisseur</h3>
   </header>
 
-  <!-- Grid layout for main content -->
-  <main>
+  <!-- Grid layout with internal flex container -->
+  <main class="grid-layout">
     <p>Bienvenidos to the world of <em>Dominican</em> dishes and their recipes. This website will teach you about the best dishes in the <strong>Dominican Republic</strong>.</p>
 
-    <section>
-      <h2>Top Dishes</h2>
-      <ul>
-        <li>Tres Golpes (Breakfast)</li>
-        <li>La Bandera (Lunch)</li>
-        <li>Mofongo</li>
-        <li>Sancocho</li>
-      </ul>
-    </section>
+    <!-- New flex container to satisfy instructor requirement -->
+    <div class="flex-sections">
+      <section>
+        <h2>Top Dishes</h2>
+        <ul>
+          <li>Tres Golpes (Breakfast)</li>
+          <li>La Bandera (Lunch)</li>
+          <li>Mofongo</li>
+          <li>Sancocho</li>
+        </ul>
+      </section>
 
-    <section id="breakfast">
-      <h2>Breakfast</h2>
-      <p>Tres Golpes: A combo of mashed plantains, fried cheese, salami, and eggs.</p>
-      <img src="https://raw.githubusercontent.com/GilbertCollado/my-website/refs/heads/main/Tres%20Golspes.avif" alt="Mangú with Tres Golpes" />
-    </section>
+      <section id="breakfast">
+        <h2>Breakfast</h2>
+        <p>Tres Golpes: A combo of mashed plantains, fried cheese, salami, and eggs.</p>
+        <img src="https://raw.githubusercontent.com/GilbertCollado/my-website/refs/heads/main/Tres%20Golspes.avif" alt="Mangú with Tres Golpes" />
+      </section>
+    </div>
 
     <section>
       <h2>Lunch</h2>
