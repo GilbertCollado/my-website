@@ -61,45 +61,22 @@ p::first-line {
   color: #6a0572;
 }
 
-/* Section for image left, text right */
-.breakfast-section .breakfast-flex {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: flex-start;
-}
-
-.breakfast-section .breakfast-image {
+/* Image styling for Breakfast section */
+.breakfast-img {
   max-width: 300px;
-  flex: 1 1 300px;
-}
-
-.breakfast-section .breakfast-image img {
   width: 100%;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
   border: 2px solid #ccc;
   border-radius: 10px;
 }
 
-.breakfast-section .breakfast-image figcaption {
-  font-size: 0.9rem;
-  text-align: center;
-  color: #444;
-  margin-top: 0.5em;
-}
-
-.breakfast-section p {
-  flex: 2 1 400px;
-  margin: 0;
-}
-
-/* Responsive media queries */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
     align-items: center;
-  }
-  .breakfast-section .breakfast-flex {
-    flex-direction: column;
   }
 }
 
