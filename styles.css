@@ -36,6 +36,12 @@ main {
   background-color: rgba(255, 255, 255, 0.95);
 }
 
+/* Scalable image (global) */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* List and text styles */
 main ul li {
   margin-bottom: 0.5em;
@@ -55,48 +61,48 @@ p::first-line {
   color: #6a0572;
 }
 
-/* Image grid + caption */
-.image-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  text-align: center;
-  padding: 1em;
-}
-.image-grid img {
-  max-width: 300px;
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-}
-.image-grid figcaption {
-  font-size: 0.9rem;
-  margin-top: 0.5em;
-  color: #444;
-}
-
-/* Flex container for credit section */
-.flex-credit {
+/* Section for image left, text right */
+.breakfast-section .breakfast-flex {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: space-between;
-}
-.flex-credit section {
-  flex: 1 1 45%;
+  align-items: flex-start;
 }
 
-/* Responsive adjustments */
+.breakfast-section .breakfast-image {
+  max-width: 300px;
+  flex: 1 1 300px;
+}
+
+.breakfast-section .breakfast-image img {
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.breakfast-section .breakfast-image figcaption {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #444;
+  margin-top: 0.5em;
+}
+
+.breakfast-section p {
+  flex: 2 1 400px;
+  margin: 0;
+}
+
+/* Responsive media queries */
 @media (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
     align-items: center;
   }
-  .flex-credit {
+  .breakfast-section .breakfast-flex {
     flex-direction: column;
   }
 }
+
 @media (max-width: 480px) {
   body {
     font-size: 1rem;
