@@ -36,13 +36,30 @@ main {
   background-color: rgba(255, 255, 255, 0.95);
 }
 
-/* Scalable image (global) */
+/* Scalable image */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* List and text styles */
+/* Dish image styling */
+.breakfast-img {
+  max-width: 300px;
+  width: 100%;
+  display: block;
+  margin: 1em auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Purple styled dish descriptions */
+.dish-description {
+  color: #6a0572;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+/* List and link styles */
 main ul li {
   margin-bottom: 0.5em;
   color: #333;
@@ -59,17 +76,6 @@ a:hover {
 p::first-line {
   font-weight: bold;
   color: #6a0572;
-}
-
-/* Image styling for Breakfast section */
-.breakfast-img {
-  max-width: 300px;
-  width: 100%;
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border: 2px solid #ccc;
-  border-radius: 10px;
 }
 
 /* Responsive adjustments */
