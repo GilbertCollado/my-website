@@ -30,16 +30,41 @@ header, main, section, footer {
   padding: 20px;
   margin-bottom: 20px;
 }
-main {
+main.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
   border: 3px solid #0077b6;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.95);
 }
 
+/* Flex container added to index.html */
+.flex-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.flex-sections section {
+  flex: 1 1 45%;
+}
+
+/* Flex layout used on all sub-pages */
+.flex-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.flex-layout section {
+  flex: 1 1 45%;
+}
+
 /* Scalable image */
 img {
   max-width: 100%;
-  height: auto; /* Keeps image scalable */
+  height: auto;
 }
 
 /* Other styles */
@@ -62,17 +87,28 @@ p::first-line {
 }
 
 /* Media Queries for responsiveness */
-/* Adjust nav layout on tablets */
+@media (max-width: 1024px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
     align-items: center;
   }
+  .flex-layout,
+  .flex-sections {
+    flex-direction: column;
+  }
 }
 
-/* Adjust font size for small phones */
 @media (max-width: 480px) {
   body {
     font-size: 1rem;
+  }
+  header h1, h2, h3 {
+    font-size: 1.2rem;
   }
 }
