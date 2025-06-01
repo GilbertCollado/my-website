@@ -72,11 +72,36 @@ p::first-line {
   color: #6a0572;
 }
 
+/* FLEX LAYOUT: One extra flex container added for requirement */
+.flex-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+/* GRID LAYOUT: For Top Dishes list */
+.grid-top-dishes {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #f0f8ff;
+  border: 2px dashed #0077b6;
+  border-radius: 8px;
+  padding: 10px;
+}
+
 /* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .dish-image {
+    max-width: 250px;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
     align-items: center;
+  }
+  .dish-image {
+    max-width: 220px;
   }
 }
 
@@ -86,5 +111,8 @@ p::first-line {
   }
   header h1, h2, h3 {
     font-size: 1.2rem;
+  }
+  .dish-image {
+    max-width: 200px;
   }
 }
