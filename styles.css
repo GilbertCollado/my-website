@@ -1,6 +1,6 @@
 /* General page styles */
 body {
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', 'Trebuchet MS', sans-serif;
   font-size: 1.1rem;
   margin: 2vw;
   background: linear-gradient(to bottom, #fff8f0, #e0f7fa);
@@ -88,10 +88,24 @@ p::first-line {
   padding: 10px;
 }
 
-/* FontAwesome icon styles */
-.icon {
-  color: #0077b6;
-  margin-right: 0.5em;
+/* Table styling */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Merriweather', serif;
+}
+.comparison-table th, .comparison-table td {
+  border: 1px solid #0077b6;
+  padding: 10px;
+  text-align: left;
+}
+.comparison-table th {
+  background-color: #0077b6;
+  color: white;
+}
+.comparison-table tr:nth-child(even) {
+  background-color: #f0f8ff;
 }
 
 /* Media queries for responsiveness */
