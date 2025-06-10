@@ -9,7 +9,6 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Flex container -->
   <nav>
     <ul class="nav-menu">
       <li><a href="index.html">Home</a></li>
@@ -20,22 +19,44 @@
     </ul>
   </nav>
 
-  <!-- Flex layout -->
-  <main class="flex-layout">
-    <section>
-      <h1><i class="fas fa-utensils icon"></i> Welcome to Dominican Cuisine</h1>
-      <p>Discover the rich and flavorful world of Dominican food — from hearty breakfasts to savory dinners, this site showcases the traditional dishes that define our culture.</p>
-      <img src="images/DominicanFlag.jpg" alt="Dominican Flag" class="dish-image">
-    </section>
+  <header>
+    <h1>Dominican Cuisine</h1>
+    <h2>Written by Gilbert Collado</h2>
+    <h3>Certified Platano Connoisseur</h3>
+  </header>
 
-    <section>
-      <h2><i class="fas fa-star icon"></i> Why Dominican Food?</h2>
+  <main class="flex-layout">
+    <section class="grid-top-dishes">
+      <h2>Top Dishes</h2>
       <ul>
-        <li>Deep cultural roots and flavorful ingredients</li>
-        <li>Home-style cooking that brings families together</li>
-        <li>Unique dishes like <em>La Bandera</em> and <em>Tres Golpes</em></li>
+        <li>Tres Golpes (Breakfast)</li>
+        <li>La Bandera (Lunch)</li>
+        <li>Sancocho (Dinner)</li>
+        <li>Mofongo</li>
       </ul>
     </section>
+
+    <section id="breakfast">
+      <h2>Breakfast</h2>
+      <p class="dish-description"><strong>Tres Golpes:</strong> A combo of mashed plantains, fried cheese, salami, and eggs.</p>
+      <img src="images/Tres Golpes.jpg" alt="Tres Golpes illustration" class="dish-image" />
+    </section>
+
+    <section id="lunch">
+      <h2>Lunch</h2>
+      <p class="dish-description"><strong>La Bandera:</strong> White rice, stewed chicken, red beans, and salad.</p>
+      <img src="images/La Bandera.jpg" alt="La Bandera illustration" class="dish-image" />
+    </section>
+
+    <section id="dinner">
+      <h2>Dinner</h2>
+      <p class="dish-description"><strong>Sancocho:</strong> A stew made with pork, beef, chicken, corn, potatoes, and yuca.</p>
+      <img src="images/Sancocho.webp" alt="Sancocho illustration" class="dish-image" />
+    </section>
   </main>
+
+  <footer>
+    <p>&copy; Gilbert Collado 2025</p>
+  </footer>
 </body>
 </html>
