@@ -72,13 +72,13 @@ p::first-line {
   color: #6a0572;
 }
 
-/* FLEX LAYOUT: One extra flex container added for requirement */
+/* FLEX LAYOUT */
 .flex-layout {
   display: flex;
   flex-direction: column;
 }
 
-/* GRID LAYOUT: For Top Dishes list */
+/* GRID LAYOUT */
 .grid-top-dishes {
   display: grid;
   grid-template-columns: 1fr;
@@ -88,7 +88,7 @@ p::first-line {
   padding: 10px;
 }
 
-/* Media queries for responsiveness */
+/* Media queries */
 @media (max-width: 1024px) {
   .dish-image {
     max-width: 250px;
