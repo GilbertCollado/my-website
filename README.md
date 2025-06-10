@@ -32,11 +32,11 @@ my-website/
 
 ## 🚀 How to Use
 
-1. **Clone or download** this repository.
-2. Open `index.html` in any web browser.
-3. Navigate through the site using the top menu.
+1. If you have the link, simply open it in your browser.
+2. No installation or setup is needed — the site is fully static and works instantly.
+3. Only people with the direct link can access the site.
 
-> You don’t need any server setup — it’s 100% static and lightweight.
+🔒 This is a private educational project. It is not indexed or listed publicly.
 
 ## 🙋 Author
 
