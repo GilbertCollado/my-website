@@ -8,20 +8,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.ico">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- Flex container -->
-  <nav>
-    <ul class="nav-menu">
-      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-      <li><a href="breakfast.html"><i class="fa-solid fa-bread-slice"></i> Breakfast</a></li>
-      <li><a href="lunch.html"><i class="fa-solid fa-utensils"></i> Lunch</a></li>
-      <li><a href="dinner.html"><i class="fa-solid fa-drumstick-bite"></i> Dinner</a></li>
-      <li><a href="https://www.godominicanrepublic.com" target="_blank"><i class="fa-solid fa-umbrella-beach"></i> Dominican Republic</a></li>
-    </ul>
-  </nav>
+<nav>
+  <ul class="nav-menu">
+    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+    <li><a href="breakfast.html"><i class="fa-solid fa-bread-slice"></i> Breakfast</a></li>
+    <li><a href="lunch.html"><i class="fa-solid fa-utensils"></i> Lunch</a></li>
+    <li><a href="dinner.html"><i class="fa-solid fa-drumstick-bite"></i> Dinner</a></li>
+    <li><a href="https://www.godominicanrepublic.com" target="_blank"><i class="fa-solid fa-umbrella-beach"></i> Dominican Republic</a></li>
+  </ul>
+</nav>
 
   <header>
     <h1>Dominican Cuisine</h1>
@@ -58,36 +58,28 @@
       <img src="images/Sancocho.webp" alt="Sancocho illustration" class="dish-image" />
     </section>
 
-    <section>
-      <h2>Meal Comparison Table</h2>
-      <table>
+    <section id="ingredient-table">
+      <h2>Common Ingredients in Dominican Cuisine</h2>
+      <table class="ingredient-table">
         <thead>
           <tr>
-            <th>Meal</th>
-            <th>Popular Dish</th>
-            <th>Main Ingredients</th>
-            <th>Common Pairings</th>
+            <th>Ingredient</th>
+            <th>Breakfast</th>
+            <th>Lunch</th>
+            <th>Dinner</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Breakfast</td>
-            <td>Tres Golpes</td>
-            <td>Plantains, eggs, cheese, salami</td>
-            <td>Coffee, avocado</td>
-          </tr>
-          <tr>
-            <td>Lunch</td>
-            <td>La Bandera</td>
-            <td>Rice, beans, stewed meat</td>
-            <td>Salad, fried plantains</td>
-          </tr>
-          <tr>
-            <td>Dinner</td>
-            <td>Sancocho</td>
-            <td>Meat stew with root vegetables</td>
-            <td>White rice, avocado</td>
-          </tr>
+          <tr><td>Plantains</td><td>✅</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Rice</td><td>❌</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Beans</td><td>❌</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Eggs</td><td>✅</td><td>❌</td><td>❌</td></tr>
+          <tr><td>Cheese</td><td>✅</td><td>❌</td><td>✅</td></tr>
+          <tr><td>Chicken</td><td>❌</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Avocado</td><td>✅</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Cassava (Yuca)</td><td>❌</td><td>❌</td><td>✅</td></tr>
+          <tr><td>Bread</td><td>✅</td><td>❌</td><td>✅</td></tr>
+          <tr><td>Tropical Fruits</td><td>✅</td><td>✅</td><td>✅</td></tr>
         </tbody>
       </table>
     </section>
