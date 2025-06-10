@@ -88,7 +88,13 @@ p::first-line {
   padding: 10px;
 }
 
-/* Media queries */
+/* FontAwesome icon styles */
+.icon {
+  color: #0077b6;
+  margin-right: 0.5em;
+}
+
+/* Media queries for responsiveness */
 @media (max-width: 1024px) {
   .dish-image {
     max-width: 250px;
