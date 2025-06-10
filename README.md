@@ -48,3 +48,10 @@ Created as a project to celebrate Dominican culture and practice HTML/CSS fundam
 
 🔒 This is a private project. Only people with the link can view the website — it is not publicly listed or discoverable.
 
+✨ Peer Feedback Suggestions
+
+- "Rudolph Mendoza" suggested that the image of *Tres Golpes* may appear too large and dominate the screen. He recommended resizing it or selecting a different image to improve visual balance.
+- "Rudolph Mendoza" also encouraged adding more images of the featured dishes to help users better visualize the meals being described throughout the site.
+- "Ava Hall" recommended using the extra space on the pages more effectively by incorporating additional images or textual content to make the layout feel more complete.
+- "Ava Hall" suggested enhancing the visual design by using a more varied or detailed background — possibly including imagery of the Dominican Republic — to better reflect the cultural theme.
+- "Ava Hall" also commented that while the homepage is visually appealing, it could benefit from layout improvements such as centering the content or placing key information inside styled content boxes for a more refined presentation.
