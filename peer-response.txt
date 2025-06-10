@@ -1,0 +1,11 @@
+Peer Suggestion #1:
+"Rudolph Mendoza" suggested that the image of Tres Golpes may appear too large and dominate the screen. He recommended resizing it or selecting a different image to improve visual balance.
+
+Response:
+I resized the Tres Golpes image on the homepage so it no longer takes up the full screen. 
+
+Peer Suggestion #2:
+"Rudolph Mendoza" also encouraged me to add more images of the dishes to help users better visualize the meals being described throughout the site.
+
+Response:
+I added new images across the Home, Breakfast, Lunch, and Dinner pages to help illustrate the meals more clearly. These fill out empty space and make the content more engaging and visually informative.
