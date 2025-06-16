@@ -1,138 +1,182 @@
-/* General page styles */
-body {
-  font-family: 'Merriweather', 'Trebuchet MS', sans-serif;
-  font-size: 1.1rem;
-  margin: 2vw;
-  background: linear-gradient(to bottom, #fff8f0, #e0f7fa);
+/* =====================
+   General Reset & Base
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Navigation menu */
+body {
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+  background-color: #fffaf2;
+  color: #333;
+  padding-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #d64045;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+/* =====================
+   Navigation
+===================== */
+nav {
+  background-color: #d64045;
+  padding: 1rem;
+}
+
 .nav-menu {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  gap: 1em;
-  padding: 1em;
-  background-color: #0077b6;
   justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
 }
+
 .nav-menu a {
   color: white;
-  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
+
 .nav-menu a:hover {
-  text-decoration: underline;
-  color: #ffd166;
+  color: #ffe7d6;
 }
 
-/* Layout and structure */
-header, main, section, footer {
-  padding: 20px;
-  margin-bottom: 20px;
-}
-main {
-  border: 3px solid #0077b6;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.95);
-}
-
-/* Dish-specific images */
-.dish-image {
-  max-width: 300px;
-  width: 100%;
-  display: block;
-  margin: 1em auto;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-}
-
-/* Description styling */
-.dish-description {
-  color: #6a0572;
-  font-weight: bold;
-  margin-top: 0.5em;
-}
-
-/* List and links */
-main ul li {
-  margin-bottom: 0.5em;
-  color: #333;
-  font-weight: bold;
-}
-a[target="_blank"] {
-  text-decoration: underline;
-  color: #1a0dab;
-}
-a:hover {
-  color: #f77f00;
-  font-weight: bold;
-}
-p::first-line {
-  font-weight: bold;
-  color: #6a0572;
-}
-
-/* FLEX LAYOUT */
-.flex-layout {
-  display: flex;
-  flex-direction: column;
-}
-
-/* GRID LAYOUT */
-.grid-top-dishes {
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color: #f0f8ff;
-  border: 2px dashed #0077b6;
-  border-radius: 8px;
-  padding: 10px;
-}
-
-/* Table styling */
-.comparison-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  font-family: 'Merriweather', serif;
-}
-.comparison-table th, .comparison-table td {
-  border: 1px solid #0077b6;
-  padding: 10px;
-  text-align: left;
-}
-.comparison-table th {
-  background-color: #0077b6;
+/* =====================
+   Hero Section
+===================== */
+.hero {
+  background-image: url('../img/hero-banner.jpg'); /* Add this image to your /img folder */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 6rem 1rem;
   color: white;
-}
-.comparison-table tr:nth-child(even) {
-  background-color: #f0f8ff;
+  position: relative;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 1024px) {
-  .dish-image {
-    max-width: 250px;
-  }
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 768px) {
-  .nav-menu {
-    flex-direction: column;
-    align-items: center;
-  }
-  .dish-image {
-    max-width: 220px;
-  }
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
-@media (max-width: 480px) {
-  body {
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* =====================
+   Sections
+===================== */
+main {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intro, .culture {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.featured-dishes h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* =====================
+   Dish Cards (Responsive Grid)
+===================== */
+.dish-cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.dish-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.dish-card:hover {
+  transform: translateY(-5px);
+}
+
+.dish-card h3 {
+  margin: 0.8rem 0 0.5rem;
+}
+
+.dish-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #d64045;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #aa2e32;
+}
+
+/* =====================
+   Footer
+===================== */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* =====================
+   Media Queries
+===================== */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
     font-size: 1rem;
   }
-  header h1, h2, h3 {
-    font-size: 1.2rem;
-  }
-  .dish-image {
-    max-width: 200px;
+
+  .btn {
+    font-size: 0.9rem;
   }
 }
