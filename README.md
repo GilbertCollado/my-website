@@ -1,51 +1,66 @@
-Dominican Cuisine Website 🇩🇴🌴🍽️
-A cultural exploration of the Dominican Republic through its most beloved dishes. This site introduces visitors to traditional breakfast, lunch, dinner, drinks, and desserts — all with authentic names, vibrant imagery, and mobile-friendly design. Built as a personal project to honor Dominican heritage and improve HTML/CSS web design skills.
+# Dominican Cuisine Website 🌴🍽️
 
-🌟 Features
-Multi-page layout: Includes pages for Breakfast, Lunch, Dinner, Drinks, and Desserts.
+A vibrant, culturally-inspired website showcasing the rich culinary traditions of the Dominican Republic. Discover the flavors of our island through beautiful imagery, traditional recipes, and responsive design.
 
-Responsive design: Works beautifully on phones, tablets, and desktops using Flexbox and media queries.
+## 🌟 Features
 
-Visually appealing: Uses a tropical-themed palette, dish images, and icons from FontAwesome.
+- **Multi-page layout**: Separate pages for Breakfast, Lunch, Dinner, Drinks, and Desserts.
+- **Responsive design**: Works seamlessly on phones, tablets, and desktops using Flexbox, Grid, and media queries.
+- **Cultural authenticity**: Descriptions and images highlight the origins and traditions of each dish.
+- **Accessible navigation**: Semantic HTML and readable color contrast support better usability.
+- **External link**: Connects users to [GoDominicanRepublic.com](https://www.godominicanrepublic.com) for further cultural exploration.
 
-Cultural authenticity: Highlights traditional Dominican meals with local names and real descriptions.
+## 📁 File Structure
 
-External resource: Link to the official GoDominicanRepublic.com for further exploration.
-
-📁 File Structure
-perl
-Copy
-Edit
+```
 my-website/
-├── index.html              # Homepage
-├── breakfast.html          # Dominican breakfast dishes
-├── lunch.html              # Dominican lunch dishes
-├── dinner.html             # Dominican dinner dishes
-├── drinks.html             # Dominican beverages
-├── desserts.html           # Dominican sweets
-├── styles.css              # Global stylesheet
-└── images/                 # All dish and drink images
-🔧 Technologies Used
-HTML5 — Semantic and accessible structure
+├── index.html            # Homepage
+├── breakfast.html        # Dominican breakfast dishes
+├── lunch.html            # Dominican lunch dishes
+├── dinner.html           # Dominican dinner dishes
+├── drinks.html           # Dominican beverages
+├── desserts.html         # Dominican sweets
+├── styles.css            # Global stylesheet
+└── images/               # All dish and drink images
+```
 
-CSS3 — Responsive layout with Flexbox and media queries
+## 🔧 Technologies Used
 
-FontAwesome — Icon support for navigation
+- **HTML5** — Semantic and accessible structure
+- **CSS3** — Flexbox, Grid, Media Queries for responsiveness
+- **Font Awesome** — Icons for navigation
+- **Responsive Design** — Mobile-first principles for optimal viewing
 
-GitHub Pages — Deployment and hosting
+## 🚀 How to Use
 
-🚀 How to Use
-Open the site in your browser:
-👉 https://gilbertcollado.github.io/my-website/
+1. Open the GitHub Pages link in your browser.
+2. Navigate through the site using the menu bar.
+3. Explore and learn about Dominican food and culture!
 
-No setup needed — it’s a static website.
+This project is for educational purposes and is not indexed or publicly discoverable.
 
-Built as an educational project — not indexed or searchable.
+## 🙋‍ Author
 
-🙋 Author
-Gilbert Collado
-Certified Platano Connoisseur 🍌
-Sharing culture one dish at a time.
+**Gilbert Collado**  
+Certified Plátano Connoisseur 🍌  
+Created to celebrate Dominican heritage and demonstrate web design skills.
 
-📜 License
+## 📄 License
+
+🔐 Private educational project. Not publicly listed.
+
+## ✨ Peer Feedback Suggestions
+
+- **Rudolph Mendoza**:
+  - Suggested resizing the *Tres Golpes* image for better visual balance.
+  - Recommended adding more food images to improve engagement.
+
+- **Ava Hall**:
+  - Encouraged using more page space effectively.
+  - Suggested incorporating a more visually rich background.
+  - Recommended refining homepage layout with styled content boxes.
+
+---
+
+Thank you for visiting and exploring Dominican cuisine! 🌟
 🔒 This is a private educational project. Only people with the link can view the site — it is not listed or indexed by search engines.
