@@ -3,90 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dominican Cuisine</title>
+  <title>A Taste of the Dominican Republic</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" type="image/png" href="favicon.ico">
-  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <!-- Flex container -->
-<nav>
-  <ul class="nav-menu">
-    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-    <li><a href="breakfast.html"><i class="fa-solid fa-bread-slice"></i> Breakfast</a></li>
-    <li><a href="lunch.html"><i class="fa-solid fa-utensils"></i> Lunch</a></li>
-    <li><a href="dinner.html"><i class="fa-solid fa-drumstick-bite"></i> Dinner</a></li>
-    <li><a href="https://www.godominicanrepublic.com" target="_blank"><i class="fa-solid fa-umbrella-beach"></i> Dominican Republic</a></li>
-  </ul>
-</nav>
 
-  <header>
-    <h1>Dominican Cuisine</h1>
-    <h2>Written by Gilbert Collado</h2>
-    <h3>Certified Platano Connoisseur</h3>
+<body>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="breakfast.html"><i class="fa-solid fa-bread-slice"></i> Breakfast</a></li>
+      <li><a href="lunch.html"><i class="fa-solid fa-utensils"></i> Lunch</a></li>
+      <li><a href="dinner.html"><i class="fa-solid fa-drumstick-bite"></i> Dinner</a></li>
+      <li><a href="https://www.godominicanrepublic.com" target="_blank"><i class="fa-solid fa-umbrella-beach"></i> Dominican Republic</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>A Taste of the Dominican Republic</h1>
+      <p>Sharing the heart of my culture through food</p>
+    </div>
   </header>
 
-  <main class="flex-layout">
-    <section class="grid-top-dishes">
-      <h2>Top Dishes</h2>
-      <ul>
-        <li>Tres Golpes (Breakfast)</li>
-        <li>La Bandera (Lunch)</li>
-        <li>Sancocho (Dinner)</li>
-        <li>Mofongo</li>
-      </ul>
+  <main>
+    <section class="intro">
+      <h2>Welcome</h2>
+      <p>Hi! I’m Gilbert — born in the Dominican Republic and raised in the United States. Through this site, I want to share the flavors, traditions, and warmth of my culture with you, one plate at a time.</p>
     </section>
 
-    <section id="breakfast">
-      <h2>Breakfast</h2>
-      <p class="dish-description"><strong>Tres Golpes:</strong> A combo of mashed plantains, fried cheese, salami, and eggs.</p>
-      <img src="images/Tres Golpes.jpg" alt="Tres Golpes illustration" class="dish-image" />
+    <section class="featured-dishes">
+      <h2>Featured Dishes</h2>
+      <div class="dish-cards">
+        <article class="dish-card">
+          <img src="img/tres-golpes.jpg" alt="Tres Golpes - Dominican breakfast plate" />
+          <h3>Tres Golpes</h3>
+          <p>A classic Dominican breakfast: mashed plantains, eggs, fried salami, and cheese.</p>
+          <a href="breakfast.html" class="btn">See More</a>
+        </article>
+
+        <article class="dish-card">
+          <img src="img/la-bandera.jpg" alt="La Bandera Dominicana - rice, beans, meat, salad" />
+          <h3>La Bandera</h3>
+          <p>The national lunch dish — white rice, beans, stewed meat, and salad.</p>
+          <a href="lunch.html" class="btn">See More</a>
+        </article>
+
+        <article class="dish-card">
+          <img src="img/sancocho.jpg" alt="Sancocho - Dominican stew with meats and vegetables" />
+          <h3>Sancocho</h3>
+          <p>A hearty stew made with 7 types of meat, root vegetables, and love.</p>
+          <a href="dinner.html" class="btn">See More</a>
+        </article>
+      </div>
     </section>
 
-    <section id="lunch">
-      <h2>Lunch</h2>
-      <p class="dish-description"><strong>La Bandera:</strong> White rice, stewed chicken, red beans, and salad.</p>
-      <img src="images/La Bandera.jpg" alt="La Bandera illustration" class="dish-image" />
-    </section>
-
-    <section id="dinner">
-      <h2>Dinner</h2>
-      <p class="dish-description"><strong>Sancocho:</strong> A stew made with pork, beef, chicken, corn, potatoes, and yuca.</p>
-      <img src="images/Sancocho.webp" alt="Sancocho illustration" class="dish-image" />
-    </section>
-
-    <section id="ingredient-table">
-      <h2>Common Ingredients in Dominican Cuisine</h2>
-      <table class="ingredient-table">
-        <thead>
-          <tr>
-            <th>Ingredient</th>
-            <th>Breakfast</th>
-            <th>Lunch</th>
-            <th>Dinner</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Plantains</td><td>✅</td><td>✅</td><td>✅</td></tr>
-          <tr><td>Rice</td><td>❌</td><td>✅</td><td>✅</td></tr>
-          <tr><td>Beans</td><td>❌</td><td>✅</td><td>✅</td></tr>
-          <tr><td>Eggs</td><td>✅</td><td>❌</td><td>❌</td></tr>
-          <tr><td>Cheese</td><td>✅</td><td>❌</td><td>✅</td></tr>
-          <tr><td>Chicken</td><td>❌</td><td>✅</td><td>✅</td></tr>
-          <tr><td>Avocado</td><td>✅</td><td>✅</td><td>✅</td></tr>
-          <tr><td>Cassava (Yuca)</td><td>❌</td><td>❌</td><td>✅</td></tr>
-          <tr><td>Bread</td><td>✅</td><td>❌</td><td>✅</td></tr>
-          <tr><td>Tropical Fruits</td><td>✅</td><td>✅</td><td>✅</td></tr>
-        </tbody>
-      </table>
+    <section class="culture">
+      <h2>More Than Just Food</h2>
+      <p>In the Dominican Republic, food is more than fuel — it’s family, it’s pride, and it’s tradition. Every dish tells a story. Whether it’s the aroma of tostones frying in the afternoon or a pot of sancocho bubbling on a Sunday, these meals bring people together.</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; Gilbert Collado 2025</p>
+    <p>&copy; 2025 Gilbert Collado • All rights reserved.</p>
   </footer>
 </body>
 </html>
