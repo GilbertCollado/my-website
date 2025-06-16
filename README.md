@@ -26,10 +26,10 @@ my-website/
 
 ## 🔧 Technologies Used
 
-- **HTML5** — Semantic and accessible structure
-- **CSS3** — Flexbox, Grid, Media Queries for responsiveness
-- **Font Awesome** — Icons for navigation
-- **Responsive Design** — Mobile-first principles for optimal viewing
+- **HTML5**: Semantic and accessible structure
+- **CSS3**: Flexbox, Grid, Media Queries for responsiveness
+- **Font Awesome**: Icons for navigation
+- **Responsive Design**: Mobile-first principles for optimal viewing
 
 ## 🚀 How to Use
 
@@ -63,4 +63,4 @@ Created to celebrate Dominican heritage and demonstrate web design skills.
 ---
 
 Thank you for visiting and exploring Dominican cuisine! 🌟
-🔒 This is a private educational project. Only people with the link can view the site — it is not listed or indexed by search engines.
+🔒 This is a private educational project. Only people with the link can view the site, it is not listed or indexed by search engines.
