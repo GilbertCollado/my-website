@@ -29,7 +29,7 @@ my-website/
 - **HTML5**: Semantic and accessible structure
 - **CSS3**: Flexbox, Grid, Media Queries for responsiveness
 - **Font Awesome**: Icons for navigation
-- **Responsive Design**: Mobile-first principles for optimal viewing
+- **Responsive Design**: Mobile first principles for optimal viewing
 
 ## 🚀 How to Use
 
