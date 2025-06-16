@@ -14,14 +14,14 @@ A vibrant, culturally-inspired website showcasing the rich culinary traditions o
 
 ```
 my-website/
-├── index.html            # Homepage
-├── breakfast.html        # Dominican breakfast dishes
-├── lunch.html            # Dominican lunch dishes
-├── dinner.html           # Dominican dinner dishes
-├── drinks.html           # Dominican beverages
-├── desserts.html         # Dominican sweets
-├── styles.css            # Global stylesheet
-└── images/               # All dish and drink images
+├── index.html             Homepage
+├── breakfast.html         Dominican breakfast dishes
+├── lunch.html             Dominican lunch dishes
+├── dinner.html            Dominican dinner dishes
+├── drinks.html            Dominican beverages
+├── desserts.html          Dominican sweets
+├── styles.css             Global stylesheet
+└── images/                All dish and drink images
 ```
 
 ## 🔧 Technologies Used
