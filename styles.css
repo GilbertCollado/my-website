@@ -2,41 +2,93 @@
 body {
   font-family: 'Merriweather', 'Trebuchet MS', sans-serif;
   font-size: 1.1rem;
-  margin: 2vw;
-  background: linear-gradient(to bottom, #fff8f0, #e0f7fa);
+  margin: 0;
+  background: linear-gradient(to bottom, #fffaf0, #e0f7fa);
+  color: #222;
+  line-height: 1.6;
 }
 
 /* Navigation menu */
+nav {
+  background-color: #0077b6;
+  padding: 1rem;
+}
+
 .nav-menu {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   gap: 1em;
-  padding: 1em;
-  background-color: #0077b6;
   justify-content: center;
 }
+
 .nav-menu a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
+
 .nav-menu a:hover {
+  color: #ffb703;
   text-decoration: underline;
-  color: #ffd166;
 }
 
-/* Layout and structure */
-header, main, section, footer {
-  padding: 20px;
-  margin-bottom: 20px;
+/* Header styling */
+header {
+  padding: 2rem;
+  text-align: center;
 }
+
+header h1 {
+  font-size: 2.5rem;
+  color: #0077b6;
+  margin-bottom: 0.5rem;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+header h3 {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* Main content box */
 main {
-  border: 3px solid #0077b6;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.95);
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* Dish-specific images */
+main h2 {
+  margin-bottom: 0.5rem;
+  color: #0077b6;
+}
+
+main p {
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+/* Footer */
+footer {
+  background-color: #003049;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  border-top: 4px solid #0077b6;
+}
+
+/* Dish image style (used on other pages) */
 .dish-image {
   max-width: 300px;
   width: 100%;
@@ -46,46 +98,11 @@ main {
   border-radius: 10px;
 }
 
-/* Description styling */
-.dish-description {
-  color: #6a0572;
-  font-weight: bold;
-  margin-top: 0.5em;
-}
-
-/* List and links */
-main ul li {
-  margin-bottom: 0.5em;
-  color: #333;
-  font-weight: bold;
-}
-a[target="_blank"] {
-  text-decoration: underline;
-  color: #1a0dab;
-}
-a:hover {
-  color: #f77f00;
-  font-weight: bold;
-}
-p::first-line {
-  font-weight: bold;
-  color: #6a0572;
-}
-
-/* FLEX LAYOUT */
+/* Flex layout */
 .flex-layout {
   display: flex;
   flex-direction: column;
-}
-
-/* GRID LAYOUT */
-.grid-top-dishes {
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color: #f0f8ff;
-  border: 2px dashed #0077b6;
-  border-radius: 8px;
-  padding: 10px;
+  gap: 1.5rem;
 }
 
 /* Table styling */
@@ -95,31 +112,29 @@ p::first-line {
   margin-top: 20px;
   font-family: 'Merriweather', serif;
 }
+
 .comparison-table th, .comparison-table td {
   border: 1px solid #0077b6;
   padding: 10px;
   text-align: left;
 }
+
 .comparison-table th {
   background-color: #0077b6;
   color: white;
 }
+
 .comparison-table tr:nth-child(even) {
   background-color: #f0f8ff;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 1024px) {
-  .dish-image {
-    max-width: 250px;
-  }
-}
-
+/* Responsive media queries */
 @media (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
     align-items: center;
   }
+
   .dish-image {
     max-width: 220px;
   }
@@ -129,9 +144,15 @@ p::first-line {
   body {
     font-size: 1rem;
   }
-  header h1, h2, h3 {
-    font-size: 1.2rem;
+
+  header h1 {
+    font-size: 2rem;
   }
+
+  main {
+    padding: 1.2rem;
+  }
+
   .dish-image {
     max-width: 200px;
   }
